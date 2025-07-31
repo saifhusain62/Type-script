@@ -21,3 +21,12 @@ c = {
     mail: "saimumsaif62@gmail.com"
 };
 console.log(c);
+// func type
+const myfunc = (a, b) => {
+    console.log(`Hello ${a} & ${b}`);
+};
+myfunc("Saif", "Akib");
+const saiffunc = (name) => {
+    return name;
+};
+console.log(saiffunc(123124));

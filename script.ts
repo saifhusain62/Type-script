@@ -43,3 +43,30 @@ c = {
 }
 
 console.log(c)
+
+// func type
+
+const myfunc  = (a:string , b:string) =>{
+
+    console.log(`Hello ${a} & ${b}`)
+
+}
+
+myfunc("Saif","Akib")
+
+
+
+// func alises
+
+
+type stringornum = string | number;
+
+const saiffunc = (name:stringornum) =>{
+
+    return name;
+
+    
+
+}
+
+console.log(saiffunc(123124))
