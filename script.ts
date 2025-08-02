@@ -70,3 +70,30 @@ const saiffunc = (name:stringornum) =>{
 }
 
 console.log(saiffunc(123124))
+
+// interfaces
+
+interface draw{
+
+    width:number;
+    length:number;
+}
+
+let Rectangle = (options:draw)=>{
+
+    let width = options.width;
+    let length = options.length;
+
+
+    return options.width*options.length;
+    
+}
+
+
+// Rectangle({
+//     width:10,
+//     length:20
+// })
+
+console.log(Rectangle({width:10,length:20}))
+
