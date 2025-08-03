@@ -97,3 +97,20 @@ let Rectangle = (options:draw)=>{
 
 console.log(Rectangle({width:10,length:20}))
 
+
+
+// Generics
+
+const addID = <T>(obj:T)=>{
+    let id = Math.random()*100;
+    return{...obj,id}
+};
+
+let user =  addID({
+  name:"Shakib",
+  age:40,
+  country:"Bangladesh"
+});
+
+console.log(user.name,user.country)
+

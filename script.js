@@ -40,3 +40,14 @@ let Rectangle = (options) => {
 //     length:20
 // })
 console.log(Rectangle({ width: 10, length: 20 }));
+// Generics
+const addID = (obj) => {
+    let id = Math.random() * 100;
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addID({
+    name: "Shakib",
+    age: 40,
+    country: "Bangladesh"
+});
+console.log(user.name, user.country);
