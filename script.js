@@ -51,3 +51,9 @@ let user = addID({
     country: "Bangladesh"
 });
 console.log(user.name, user.country);
+const response1 = {
+    status: 200,
+    type: "saif",
+    data: 102
+};
+console.log(response1);

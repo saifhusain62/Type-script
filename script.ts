@@ -114,3 +114,18 @@ let user =  addID({
 
 console.log(user.name,user.country)
 
+
+interface APIResponce<T>{
+    status:number;
+    type:string;
+    data:T
+}
+
+const response1: APIResponce<number> = {
+    status:200,
+    type:"saif",
+    data:102
+}
+
+console.log(response1);
+
