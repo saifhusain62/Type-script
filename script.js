@@ -57,3 +57,17 @@ const response1 = {
     data: 102
 };
 console.log(response1);
+// ENUM TYPE
+var Rtype;
+(function (Rtype) {
+    Rtype[Rtype["school"] = 0] = "school";
+    Rtype[Rtype["college"] = 1] = "college";
+    Rtype[Rtype["versity"] = 2] = "versity";
+    Rtype[Rtype["national"] = 3] = "national";
+})(Rtype || (Rtype = {}));
+const responce2 = {
+    start: 123,
+    types: Rtype.national,
+    datas: "saif"
+};
+console.log(responce2);

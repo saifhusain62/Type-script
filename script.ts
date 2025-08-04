@@ -114,6 +114,7 @@ let user =  addID({
 
 console.log(user.name,user.country)
 
+//  GENERICS 2
 
 interface APIResponce<T>{
     status:number;
@@ -129,3 +130,22 @@ const response1: APIResponce<number> = {
 
 console.log(response1);
 
+// ENUM TYPE
+
+enum Rtype  {school,college,versity,national}
+
+interface Responce<T>{
+    start:number;
+    types:Rtype;
+    datas:T;
+
+}
+
+const responce2:Responce<string>={
+    start:123,
+    types:Rtype.national,
+    datas:"saif"
+
+}
+
+console.log(responce2)
